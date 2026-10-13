@@ -1,7 +1,7 @@
-from .desconto import IDesconto
+from models.desconto import IDesconto
 
 class Pedido:
-    def __init__(self, cliente, desconto: IDesconto):
+    def __init__(self, cliente, desconto:IDesconto):
         self.cliente = cliente
         self.desconto = desconto
         self.valor_original = 0.0
